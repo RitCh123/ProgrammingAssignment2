@@ -17,8 +17,10 @@ makeCacheMatrix <- function(x = matrix()) {
 #gets inverse from cache, checks for existence
 #if so, get inverse from cache, if not
 #solve inverse and store in cache
+
 cacheSolve <- function(x, ...) {
   m <- x$getSolve()
+  
   if(!is.null(m)) {
     message("Cache data from variable")
     return(m)
